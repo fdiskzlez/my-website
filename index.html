@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>fdiskzlez</title>
+    <style>
+        body {
+            background-color: #231f1f; /* Background color */
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        marquee {
+            width: 100%;
+            color: #eeeeee; /* Bright red text */
+            font-size: 24px; /* Larger font size */
+            white-space: nowrap; /* Prevent text wrapping */
+            overflow: hidden; /* Hide overflow */
+        }
+        .black-rectangle {
+            width: 700px;
+            height: 300px; /* Height remains the same */
+            background-color: #000000;
+            color: #FFFFFF;
+            display: flex;
+            flex-direction: column; /* Changed to column to stack elements vertically */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .top-container {
+            display: flex;
+            flex: 1;
+            align-items: center; /* Center vertically */
+        }
+        .image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-container img {
+            max-width: 100%; /* Make sure image doesn't exceed container */
+            max-height: 100%; /* Make sure image doesn't exceed container */
+        }
+        .text-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically */
+            padding-left: 30px;
+        }
+        .text-container h3 {
+            margin: 0; /* Remove default margin */
+            margin-bottom: 10px; /* Add space between h3 elements */
+            font-family: Arial, sans-serif; /* Normal font */
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px; /* Add margin between buttons and text */
+        }
+        .button-container a {
+            margin-bottom: 2px; /* Reduce margin between links */
+            text-decoration: none; /* Remove underline */
+            color: #FFFFFF; /* White text color */
+            font-size: 14px; /* Text size */
+            cursor: pointer; /* Pointer cursor on hover */
+            font-family: Arial, sans-serif; /* Arial font for buttons */
+        }
+        .button-container a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+    </style>
+</head>
+<body>
+    <marquee>You are currently listening to Nirvana - Heart Shaped Box</marquee>
+    <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
+        <div class="black-rectangle">
+            <div class="top-container">
+                <div class="image-container">
+                    <a href='https://64.media.tumblr.com/451e4f6541a827d0c7a189f50aeb717f/de9a948663713251-d5/s400x600/c7aa9eef8639971e5479df0db8478864f0dbd441.gifv' target='_blank'>
+                        <img src='https://64.media.tumblr.com/451e4f6541a827d0c7a189f50aeb717f/de9a948663713251-d5/s400x600/c7aa9eef8639971e5479df0db8478864f0dbd441.gifv' border='2' alt='New-Project'/>
+                    </a>
+                </div>
+                <div class="text-container">
+                    <h3>Having an entire house and on almost every single device that I own has at least Linux on it is insane.</h3>
+                    <h3>This website is pretty much a work of progress so please be patient!</h3>
+                    <div class="button-container">
+                        <a href="https://en.wikipedia.org/wiki/Linux">What is linux ?</a>
+                        <a href="ServerHosted.html">Servers</a>
+                        <a href="antma.html">antma Desktop Environment</a>
+                        <h2>Rest in peace Kurt Cobain</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Adding the hidden audio player for background music -->
+    <audio autoplay loop>
+        <source src="https://od.lk/d/NzRfMzY0OTY4OTZf/Nirvana%20-%20Heart-Shaped%20Box%20%28Official%20Music%20Video%29.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
