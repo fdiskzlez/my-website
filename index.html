@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fdiskzlez</title>
+    <link rel="icon" href="nazrin.png">
     <style>
         body {
             font-family: 'unifont';
             font-style: normal;
-            background-color: #101419;
-            color: #b6beca;
-            margin: 0; /* Remove default margin */
+            margin: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh; /* Full viewport height */
+            min-height: 100vh; 
+            overflow: hidden;
+            color: #b6beca;
+        }
+
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
         }
 
         .container-navbar {
@@ -117,53 +130,56 @@
             font-size: large;
             position: fixed;
             width: 100%;
-            left: 0px;
+            left: 0;
             box-sizing: border-box;
-            bottom: 0px;
+            bottom: 0;
             padding: 15px;
         }
     </style>
 </head>
 <body>
+    <video class="video-background" autoplay muted loop>
+        <source src="Nasa.mp4" type="video/mp4">
+    </video>
+
     <div class="container-navbar">
         <img src="logo.png" alt="Logo">
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Touhou_Project">Touhou</a></li>
+            <li><a href="ricing.html">rice</a></li>
             <li><a href="https://en.wikipedia.org/wiki/Linux">Linux</a></li>
             <li><a href="https://github.com/antma-window-manager">antma</a></li>
         </ul>
     </div>
     <h2>Welcome to fdiskzlez's awesome sauce website</h2>
-    <h>Coding Languages i mostly been learning / Using </h>
-            <div class="container-langs">
-                <div class="item">
-                    <img src="cpp.png" alt="C++ Logo">
-                </div>
-                <div class="item">
-                    <img src="C.svg" alt="C">
-                </div>
-                <div class="item">
-                    <img src="python.svg" alt="Python Logo">
-                </div>
-                <div class="item">
-                    <img src="html.svg" alt="HTML Logo">
-                </div>
-                <div class="item">
-                    <img src="css.svg" alt="CSS Logo">
-                </div>
-                <div class="item">
-                    <img src="bash.svg" alt="Shell Logo">
-                </div>
-                <div class="item">
-                    <img src="linux.svg" alt="Linux Logo">
-                </div>
-                <div class="item">
-                    <img src="archlinux.svg" alt="Arch Logo">
-                </div>
-            </div>
+    <h3>Coding Languages I mostly use</h3>
+    <div class="container-langs">
+        <div class="item">
+            <img src="cpp.png" alt="C++ Logo">
+        </div>
+        <div class="item">
+            <img src="C.svg" alt="C">
+        </div>
+        <div class="item">
+            <img src="python.svg" alt="Python Logo">
+        </div>
+        <div class="item">
+            <img src="html.svg" alt="HTML Logo">
+        </div>
+        <div class="item">
+            <img src="css.svg" alt="CSS Logo">
+        </div>
+        <div class="item">
+            <img src="bash.svg" alt="Shell Logo">
+        </div>
+        <div class="item">
+            <img src="linux.svg" alt="Linux Logo">
+        </div>
+        <div class="item">
+            <img src="archlinux.svg" alt="Arch Logo">
         </div>
     </div>
-    <p>i use arch btw</p>
+    <p>i use arch btw :3</p>
 </body>
 </html>
-
+<a href="https://youtu.be/AmrrSfiMxGA?si=-e2KRBi0XODg8I_m">Source</a>
